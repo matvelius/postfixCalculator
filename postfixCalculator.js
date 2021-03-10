@@ -1,4 +1,4 @@
-// ID успешной посылки: 49260420
+// ID успешной посылки: 49313087
 
 // ПРИНЦИП РАБОТЫ
 
@@ -119,9 +119,17 @@ rl.on('line', function (line) {
 
         }
 
-      } else {
+      } else if (item === "*") {
 
-        result = eval(`${num1} ${item} ${num2}`)
+        result = num1 * num2
+
+      } else if (item === "+") {
+
+        result = num1 + num2
+
+      } else if (item === "-") {
+
+        result = num1 - num2
 
       }
 
